@@ -1,0 +1,1014 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 5.14.0-570.37.1.el9_6.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/3.26.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/3.26.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f0eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f0eb.dir/build.make CMakeFiles/cmTC_8f0eb.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2'
+        Building C object CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -v -o CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/'
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1 -quiet -v -iprefix /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8f0eb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cczW1BYZ.s
+        GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed"
+        ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include
+         /opt/slurm/current/include
+         /opt/pmix/4.2.6/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed
+         /usr/local/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 8d09470e88bb77fde4f847677488126c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o /tmp/cczW1BYZ.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-63.el9
+        COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/
+        LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_8f0eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f0eb.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -v -rdynamic CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -o cmTC_8f0eb 
+        Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/
+        LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f0eb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8f0eb.'
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNSBBfT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f0eb /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64 -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib -L/opt/slurm/current/lib -L/opt/pmix/4.2.6/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f0eb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8f0eb.'
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+          add: [/opt/slurm/current/include]
+          add: [/opt/pmix/4.2.6/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+          add: [/usr/local/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+        collapse include dir [/opt/slurm/current/include] ==> [/opt/slurm/current/include]
+        collapse include dir [/opt/pmix/4.2.6/include] ==> [/opt/pmix/4.2.6/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include;/opt/slurm/current/include;/opt/pmix/4.2.6/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed;/usr/local/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f0eb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f0eb.dir/build.make CMakeFiles/cmTC_8f0eb.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4LqRx2']
+        ignore line: [Building C object CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -v -o CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/']
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1 -quiet -v -iprefix /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/ /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8f0eb.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cczW1BYZ.s]
+        ignore line: [GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+        ignore line: [ /opt/slurm/current/include]
+        ignore line: [ /opt/pmix/4.2.6/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 8d09470e88bb77fde4f847677488126c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o /tmp/cczW1BYZ.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-63.el9]
+        ignore line: [COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_8f0eb]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f0eb.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -v -rdynamic CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -o cmTC_8f0eb ]
+        ignore line: [Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_8f0eb' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8f0eb.']
+        link line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNSBBfT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f0eb /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64 -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib -L/opt/slurm/current/lib -L/opt/pmix/4.2.6/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccNSBBfT.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8f0eb] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o] ==> obj [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o]
+          arg [-rpath] ==> ignore
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> ignore
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64]
+          arg [-L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib]
+          arg [-L/opt/slurm/current/lib] ==> dir [/opt/slurm/current/lib]
+          arg [-L/opt/pmix/4.2.6/lib] ==> dir [/opt/pmix/4.2.6/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib]
+          arg [-L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..]
+          arg [CMakeFiles/cmTC_8f0eb.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o] ==> obj [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib]
+        collapse library dir [/opt/slurm/current/lib] ==> [/opt/slurm/current/lib]
+        collapse library dir [/opt/pmix/4.2.6/lib] ==> [/opt/pmix/4.2.6/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib]
+        collapse library dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64;/lib64;/usr/lib64;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib;/opt/slurm/current/lib;/opt/pmix/4.2.6/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92983/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_92983.dir/build.make CMakeFiles/cmTC_92983.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm'
+        Building CXX object CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++   -v -o CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/'
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1plus -quiet -v -iprefix /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/ -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92983.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjjI97l.s
+        GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include"
+        ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed"
+        ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include
+         /opt/slurm/current/include
+         /opt/pmix/4.2.6/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed
+         /usr/local/include
+         /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 15ea45919fe9a40293fd103ba908f3d6
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/'
+         as -v --64 -o CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjjI97l.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-63.el9
+        COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/
+        LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_92983
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92983.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++  -v -rdynamic CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92983 
+        Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs
+        COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl,-rpath,/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.3.0 (Spack GCC) 
+        COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/
+        LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_92983' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92983.'
+         /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc55yqWL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_92983 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64 -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib -L/opt/slurm/current/lib -L/opt/pmix/4.2.6/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_92983' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92983.'
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+          add: [/opt/slurm/current/include]
+          add: [/opt/pmix/4.2.6/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+          add: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+          add: [/usr/local/include]
+          add: [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+        collapse include dir [/opt/slurm/current/include] ==> [/opt/slurm/current/include]
+        collapse include dir [/opt/pmix/4.2.6/include] ==> [/opt/pmix/4.2.6/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+        collapse include dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0/x86_64-pc-linux-gnu]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0/backward]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include;/opt/slurm/current/include;/opt/pmix/4.2.6/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0/x86_64-pc-linux-gnu;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include/c++/12.3.0/backward;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed;/usr/local/include;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92983/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_92983.dir/build.make CMakeFiles/cmTC_92983.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-pYwIJm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++   -v -o CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/']
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/cc1plus -quiet -v -iprefix /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/ -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92983.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccjjI97l.s]
+        ignore line: [GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include"]
+        ignore line: [ignoring duplicate directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/include]
+        ignore line: [ /opt/slurm/current/include]
+        ignore line: [ /opt/pmix/4.2.6/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/include]
+        ignore line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../include/c++/12.3.0/backward]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Spack GCC) version 12.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 15ea45919fe9a40293fd103ba908f3d6]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccjjI97l.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-63.el9]
+        ignore line: [COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_92983]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92983.dir/link.txt --verbose=1]
+        ignore line: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++  -v -rdynamic CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92983 ]
+        ignore line: [Reading specs from /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/specs]
+        ignore line: [COLLECT_GCC=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /usr/local/pace-apps/spack-cache/stage/pace-rrahaman6/spack-stage-gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/spack-src/configure --prefix=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/include --with-zstd-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib --enable-bootstrap --with-mpfr-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/include --with-mpfr-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib --with-gmp-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/include --with-gmp-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib --with-mpc-include=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/include --with-mpc-lib=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib --without-isl --with-stage1-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib' --with-boot-ldflags='-Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gmp-6.2.1-yttswsdfrtbfz56kfp7acyppb4gmc7ee/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpc-1.3.1-vtihikcqinvygakbpbdbldbt62wrswhy/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/mpfr-4.2.0-m7mkmzmf3zi67bey54fhqinqknpjei7z/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zlib-1.2.13-jv5y5e7lstxpe7urzow6wr42b44vclu3/lib -Wl -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/zstd-1.5.5-zokfqscxl2bxqzikz5ftrnx6ugyaw4m5/lib -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.3.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib/:/opt/slurm/current/lib/:/opt/pmix/4.2.6/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib/:/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib/:/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_92983' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92983.']
+        link line: [ /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2 -plugin /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so -plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc55yqWL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_92983 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o -rpath /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64 -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib -L/opt/slurm/current/lib -L/opt/pmix/4.2.6/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64 -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib -L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib -L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../.. CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/libexec/gcc/x86_64-pc-linux-gnu/12.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc55yqWL.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_92983] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o] ==> obj [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o]
+          arg [-rpath] ==> ignore
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> ignore
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64]
+          arg [-L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib]
+          arg [-L/opt/slurm/current/lib] ==> dir [/opt/slurm/current/lib]
+          arg [-L/opt/pmix/4.2.6/lib] ==> dir [/opt/pmix/4.2.6/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib]
+          arg [-L/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib] ==> dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib]
+          arg [-L/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..]
+          arg [CMakeFiles/cmTC_92983.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o] ==> obj [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64/../lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/../lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../../../lib64] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib]
+        collapse library dir [/opt/slurm/current/lib] ==> [/opt/slurm/current/lib]
+        collapse library dir [/opt/pmix/4.2.6/lib] ==> [/opt/pmix/4.2.6/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib]
+        collapse library dir [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib] ==> [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib]
+        collapse library dir [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/../lib/gcc/x86_64-pc-linux-gnu/12.3.0/../../..] ==> [/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtbegin.o;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc/x86_64-pc-linux-gnu/12.3.0;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib/gcc;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib64;/lib64;/usr/lib64;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mvapich2-2.3.7-1-qv3gjagtbx5e3rlbdy6iy2sfczryftyt/lib;/opt/slurm/current/lib;/opt/pmix/4.2.6/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/libpciaccess-0.17-pjfe4ct4gfm5k26s36hmewhbz4k232dl/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/zlib-1.2.13-3qhjpij2pji47kfanmlflvwk5ljcn5lh/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpc-1.3.1-3zvixith5i243hwiill4exyu3lf2q6ad/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/mpfr-4.2.0-tox4bdsc25zr763rnq5gzlukfbvw7uj7/lib;/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-12.3.0/gmp-6.2.1-n7dzsse5e3f6w5z6q6cuqursydg6yypo/lib;/storage/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw-3.1.2/CMakeLists.txt:95 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b6ef/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9b6ef.dir/build.make CMakeFiles/cmTC_9b6ef.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6'
+        Building C object CMakeFiles/cmTC_9b6ef.dir/src.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9b6ef.dir/src.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6/src.c
+        Linking C executable cmTC_9b6ef
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b6ef.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_9b6ef.dir/src.c.o -o cmTC_9b6ef 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-4yEDs6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:498 (check_library_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib64/libX11.so;/usr/lib64/libXext.so"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_769db/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_769db.dir/build.make CMakeFiles/cmTC_769db.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha'
+        Building C object CMakeFiles/cmTC_769db.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_769db.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha/CheckFunctionExists.c
+        Linking C executable cmTC_769db
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_769db.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_769db.dir/CheckFunctionExists.c.o -o cmTC_769db  /usr/lib64/libX11.so /usr/lib64/libXext.so 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-6l1Nha'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:513 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_74aae/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_74aae.dir/build.make CMakeFiles/cmTC_74aae.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr'
+        Building C object CMakeFiles/cmTC_74aae.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_74aae.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr/CheckFunctionExists.c
+        Linking C executable cmTC_74aae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74aae.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_74aae.dir/CheckFunctionExists.c.o -o cmTC_74aae 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-OBoGPr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:527 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9535d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9535d.dir/build.make CMakeFiles/cmTC_9535d.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN'
+        Building C object CMakeFiles/cmTC_9535d.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_9535d.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN/CheckFunctionExists.c
+        Linking C executable cmTC_9535d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9535d.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_9535d.dir/CheckFunctionExists.c.o -o cmTC_9535d 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-9HbQzN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:536 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_045be/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_045be.dir/build.make CMakeFiles/cmTC_045be.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY'
+        Building C object CMakeFiles/cmTC_045be.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_045be.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY/CheckFunctionExists.c
+        Linking C executable cmTC_045be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_045be.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_045be.dir/CheckFunctionExists.c.o -o cmTC_045be 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-tcQATY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:545 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aebc9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aebc9.dir/build.make CMakeFiles/cmTC_aebc9.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU'
+        Building C object CMakeFiles/cmTC_aebc9.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_aebc9.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU/CheckFunctionExists.c
+        Linking C executable cmTC_aebc9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aebc9.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_aebc9.dir/CheckFunctionExists.c.o -o cmTC_aebc9 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-iJZrNU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:555 (check_library_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/hice1/qchen438/6122/ogl-master/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_994bf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_994bf.dir/build.make CMakeFiles/cmTC_994bf.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY'
+        Building C object CMakeFiles/cmTC_994bf.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_994bf.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY/CheckFunctionExists.c
+        Linking C executable cmTC_994bf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_994bf.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_994bf.dir/CheckFunctionExists.c.o -o cmTC_994bf  -lICE 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-ub85gY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:1 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9d676/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9d676.dir/build.make CMakeFiles/cmTC_9d676.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF'
+        Building C object CMakeFiles/cmTC_9d676.dir/CheckIncludeFile.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc    -o CMakeFiles/cmTC_9d676.dir/CheckIncludeFile.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF/CheckIncludeFile.c
+        Linking C executable cmTC_9d676
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d676.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_9d676.dir/CheckIncludeFile.c.o -o cmTC_9d676 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-WllHaF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:2 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a20fc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a20fc.dir/build.make CMakeFiles/cmTC_a20fc.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu'
+        Building C object CMakeFiles/cmTC_a20fc.dir/CheckIncludeFile.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc    -o CMakeFiles/cmTC_a20fc.dir/CheckIncludeFile.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu/CheckIncludeFile.c
+        Linking C executable cmTC_a20fc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a20fc.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_a20fc.dir/CheckIncludeFile.c.o -o cmTC_a20fc 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-fjNANu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:3 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aac22/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aac22.dir/build.make CMakeFiles/cmTC_aac22.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq'
+        Building C object CMakeFiles/cmTC_aac22.dir/CheckIncludeFile.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc    -o CMakeFiles/cmTC_aac22.dir/CheckIncludeFile.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq/CheckIncludeFile.c
+        Linking C executable cmTC_aac22
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aac22.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_aac22.dir/CheckIncludeFile.c.o -o cmTC_aac22 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-X2EwNq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:22 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60c61/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_60c61.dir/build.make CMakeFiles/cmTC_60c61.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu'
+        Building C object CMakeFiles/cmTC_60c61.dir/OFF64_T.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1   -o CMakeFiles/cmTC_60c61.dir/OFF64_T.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu/OFF64_T.c
+        Linking C executable cmTC_60c61
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c61.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_60c61.dir/OFF64_T.c.o -o cmTC_60c61 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-zgQpCu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:31 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_46471/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46471.dir/build.make CMakeFiles/cmTC_46471.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67'
+        Building C object CMakeFiles/cmTC_46471.dir/CheckFunctionExists.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc   -DCHECK_FUNCTION_EXISTS=fseeko -o CMakeFiles/cmTC_46471.dir/CheckFunctionExists.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67/CheckFunctionExists.c
+        Linking C executable cmTC_46471
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46471.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc  -DCHECK_FUNCTION_EXISTS=fseeko -rdynamic CMakeFiles/cmTC_46471.dir/CheckFunctionExists.c.o -o cmTC_46471 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-qJxf67'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:39 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk"
+      binary: "/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c95c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c95c.dir/build.make CMakeFiles/cmTC_5c95c.dir/build
+        gmake[1]: Entering directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk'
+        Building C object CMakeFiles/cmTC_5c95c.dir/CheckIncludeFile.c.o
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc    -o CMakeFiles/cmTC_5c95c.dir/CheckIncludeFile.c.o -c /home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk/CheckIncludeFile.c
+        Linking C executable cmTC_5c95c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c95c.dir/link.txt --verbose=1
+        /usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/gcc -rdynamic CMakeFiles/cmTC_5c95c.dir/CheckIncludeFile.c.o -o cmTC_5c95c 
+        gmake[1]: Leaving directory '/home/hice1/qchen438/6122/ogl-master/pace-ice-build/CMakeFiles/CMakeScratch/TryCompile-MC4ELk'
+        
+      exitCode: 0
+...
